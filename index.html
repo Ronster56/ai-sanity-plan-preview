@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Sanity Plan — Course Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Mobile overlay -->
+<div id="sidebar-overlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-area">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="8" fill="#0ea5e9"/>
+        <path d="M12 14h16M12 20h12M12 26h8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="30" cy="26" r="4" fill="#fbbf24" stroke="#fff" stroke-width="1.5"/>
+      </svg>
+      <div>
+        <div class="logo-title">The AI Sanity Plan</div>
+        <div class="logo-subtitle">Course Preview</div>
+      </div>
+    </div>
+    <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close sidebar">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  
+  <!-- Path Selector -->
+  <div class="path-selector">
+    <div class="path-label">Viewing Path:</div>
+    <div class="path-toggle">
+      <button id="btn-beginner" class="path-btn active" onclick="setPath('beginner')">Beginner</button>
+      <button id="btn-intermediate" class="path-btn" onclick="setPath('intermediate')">Intermediate</button>
+      <div id="path-slider" class="path-slider"></div>
+    </div>
+  </div>
+  
+  <!-- Navigation -->
+  <nav id="sidebar-nav" class="sidebar-nav">
+    <!-- Populated by JS -->
+  </nav>
+  
+  <div class="sidebar-footer">
+    <div class="author-badge">
+      <img src="assets/artwork/ai_ron_avatar_v2.png" alt="AI Ron" class="author-avatar" loading="lazy">
+      <div>
+        <div class="author-name">By Ronnie Katz</div>
+        <div class="author-role">AI Sanity Plan Creator</div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<main id="main-content" class="main-content">
+  <!-- Top bar -->
+  <header class="topbar">
+    <button class="hamburger" onclick="toggleSidebar()" aria-label="Open navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="topbar-path-indicator">
+      <span id="topbar-path-label" class="topbar-path-tag">Beginner Path</span>
+    </div>
+    <div class="topbar-title" id="topbar-title">The AI Sanity Plan</div>
+  </header>
+  
+  <!-- Content Area -->
+  <div id="content-area" class="content-area">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 The AI Sanity Plan. All rights reserved. Course preview for review purposes.</p>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer-attribution">
+        Created with Perplexity Computer
+      </a>
+    </div>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
